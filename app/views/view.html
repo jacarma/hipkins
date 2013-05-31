@@ -1,0 +1,11 @@
+
+<div class="views" style="text-align: center;">
+
+    <div class="viewbox" ng-repeat="job in jenkinsData.jobs">
+        <input class="knob " data-fgColor="#69D2E7" data-thickness=".1" data-width="120"
+               data-readOnly=true value="{{getOkPercentage(job) | number:2| percentage }}"
+               data-bgColor="#FA6900" knob>
+        <h2>{{ job.name }}</h2>
+    </div>
+
+</div>

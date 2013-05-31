@@ -1,0 +1,13 @@
+<div class="views" style="text-align: center;">
+
+
+    <div class="viewbox" ng-repeat="view in jenkinsData.views">
+        <a href="#/view/{{view.name}}">
+        <input class="knob " data-fgColor="#69D2E7" data-thickness=".1" data-width="120"
+               data-readOnly=true value="{{getOkPercentage(view) | number:2| percentage }}"
+               data-bgColor="#FA6900" knob>
+        <h2>{{ view.name }}</h2>
+        </a>
+    </div>
+
+</div>
