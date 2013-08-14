@@ -3,7 +3,7 @@
 describe('Filter: percentage', function () {
 
   // load the filter's module
-  beforeEach(module('testYoApp'));
+  beforeEach(module('hipkinsApp'));
 
   // initialize a new instance of the filter before each test
   var percentage;

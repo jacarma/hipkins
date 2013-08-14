@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('testYoApp', ['ngResource'])
+angular.module('hipkinsApp', ['ngResource'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

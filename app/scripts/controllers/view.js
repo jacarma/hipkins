@@ -1,19 +1,22 @@
+/*jshint indent:4 */
 'use strict';
 
-angular.module('testYoApp')
-  .controller('ViewCtrl', function ($scope, jenkinsView, $routeParams) {
-        $scope.jenkinsData = jenkinsView.get({id: $routeParams.id});
+angular.module('hipkinsApp')
+    .controller('ViewCtrl', function($scope, jenkinsApi, $routeParams) {
+        $scope.jenkinsData = jenkinsApi.view.get({
+            id: $routeParams.id
+        });
 
         $scope.getOkPercentage = function(job) {
             var numBuilds = job.builds.length;
             var okJobs = 0;
 
-            for(var i=0; i<numBuilds; i++) {
+            for (var i = 0; i < numBuilds; i++) {
                 var build = job.builds[i];
-                if(build.result === "SUCCESS") {
+                if (build.result === 'SUCCESS') {
                     okJobs++;
                 }
             }
             return okJobs / numBuilds;
-        }
+        };
     });

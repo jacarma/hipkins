@@ -3,7 +3,7 @@
 describe('Controller: ViewCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('testYoApp'));
+  beforeEach(module('hipkinsApp'));
 
   var ViewCtrl,
     scope;

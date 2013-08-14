@@ -1,7 +1,7 @@
 'use strict';
 
 describe('Directive: knob', function () {
-  beforeEach(module('testYoApp'));
+  beforeEach(module('hipkinsApp'));
 
   var element;
 

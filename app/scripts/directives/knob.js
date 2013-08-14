@@ -1,10 +1,11 @@
+/*jshint indent:4 */
 'use strict';
 
-angular.module('testYoApp')
-  .directive('knob', function () {
+angular.module('hipkinsApp')
+    .directive('knob', function () {
         return {
-            link: function(scope, element, attrs, controller){
+            link: function(scope, element){
                 window.setTimeout(function(){ element.knob(); }, 100);
             }
         };
-  });
+    });

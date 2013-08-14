@@ -2,17 +2,18 @@
 
 
 .viewbox{
-    width: 30%;
-    margin: 1%;
+    width: 200px;
+    margin: 20px;
     display: inline-block;
     /*font-family: 'Romanesco', cursive;*/
     font-family: 'Josefin Slab', serif;
-    font-size: 28px;
+    font-size: 18px;
     cursor: pointer;
 }
 
 .viewbox h2{
     margin-top: -60px;
+    font-size: 18px;
 }
 .viewbox a h2, .viewbox a, , .viewbox h2{
     color: rgba(103, 107, 91, 0.7);
@@ -53,3 +54,4 @@ h1, a h1{
     left: 0;
     margin-top: -260px;
 }
+
